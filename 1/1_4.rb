@@ -1,0 +1,1 @@
+File.open("staffs.txt") { |f| f.readlines }
