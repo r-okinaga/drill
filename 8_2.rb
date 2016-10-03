@@ -55,6 +55,9 @@ class Othello
     end
 end
 
-o = Othello.new "wbbwbwbb"
-o.reverse
-p o.black_count
+while str = STDIN.gets
+    breake if str.chomp =~ /q+/
+    o = Othello.new str.chomp
+    o.reverse
+    p o.black_count
+end
