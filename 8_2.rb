@@ -25,9 +25,7 @@ class Othello
         s = StringScanner.new(pieces)
         until s.eos?
             case
-                when s.scan(/w+/)
-                    p << s[0]
-                when s.scan(/b+/)
+                when s.scan(/w+|b+/)
                     p << s[0]
                 else
                     raise "Unknown token"
