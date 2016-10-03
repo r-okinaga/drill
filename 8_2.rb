@@ -41,6 +41,7 @@ class Othello
 
         pieces.map! do |p|
             case pieces.index p
+                ##端の石は裏返さない
                 when 0, pieces.count - 1
                     p
                 else
